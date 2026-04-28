@@ -1,4 +1,4 @@
-# Multi-Agent AI Lab 🚀
+# Multi-Agent AI Lab 
 
 This repository showcases my journey building AI-powered systems using APIs and multi-agent architectures.
 
@@ -17,17 +17,17 @@ This repository showcases my journey building AI-powered systems using APIs and 
 * Supports **PDF and DOCX resume upload**
 * Extracts and analyzes resume content automatically
 
-#### 🤖 Agents:
+####  Agents:
 
 * **CV Analyzer** → extracts skills, experience, education
 * **Scorer** → evaluates and scores the CV
 * **Improver** → suggests actionable improvements
 
-#### 🔄 Workflow:
+####  Workflow:
 
 Resume → Text Extraction → Analyzer → Scorer → Improver → Final Output
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * REST APIs (HTTP methods, JSON, request/response cycle)
 * Environment variables and API security
@@ -37,7 +37,7 @@ Resume → Text Extraction → Analyzer → Scorer → Improver → Final Output
 * Multi-agent collaboration
 * File handling (PDF & DOCX parsing)
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * Python
 * Groq API
