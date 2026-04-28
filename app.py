@@ -3,15 +3,17 @@ from crewai import Agent, Task, Crew, LLM  # LLM
 import os
 from dotenv import load_dotenv
 
+
 # Loading environment variables
 load_dotenv()
 
 
-# Use CrewAI's LLM wrapper
+# Setting up the LLM
 llm = LLM(
     model="groq/llama-3.3-70b-versatile",   # ← "provider/model" format
     temperature=0.5
 )
+
 
 
 # Agent 1: Researcher
@@ -23,6 +25,7 @@ researcher = Agent(
 )
 
 
+
 # Agent 2: Writer
 writer = Agent(
     role="Writer",
@@ -30,6 +33,7 @@ writer = Agent(
     backstory="Turns research into simple content",
     llm=llm
 )
+
 
 
 # Tasks
@@ -46,11 +50,14 @@ write_task = Task(
 )
 
 
+
+
 # Crew
 crew = Crew(
     agents=[researcher, writer],
     tasks=[research_task, write_task]
 )
+
 
 
 # Running the crew
