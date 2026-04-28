@@ -9,7 +9,8 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 
-# create an llm variable
+
+# setting up the LLM
 llm = ChatGroq(
     model="llama3-8b-8192",
     temperature=0.5
@@ -24,8 +25,6 @@ researcher = Agent(
     backstory="Expert at finding and summarizing info",
     llm=llm
 )
-
-
 
 # Agent 2: Writer
 writer = Agent(
@@ -49,6 +48,7 @@ write_task = Task(
     expected_output="3 sentence summary",
     agent=writer
 )
+
 
 
 
